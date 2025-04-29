@@ -1,46 +1,69 @@
-#  SmartStay
-SmartStay is a full-stack web application designed to make Airbnb browsing smarter, faster, and more insightful. Built using real-world Airbnb data from 34 major U.S. cities, SmartStay enhances the travel planning experience by offering custom filtering, rating-based sorting, and data-driven insights that Airbnb itself doesn’t provide.
+# 🏡 SmartStay  
+**Your Ultimate Data-Powered Airbnb Travel Planner**
 
-Whether you're a solo traveler, a family planning a group trip, or someone just looking for a cozy weekend stay, SmartStay helps you discover listings based on real review scores, amenities, price trends, and guest capacity—not just Airbnb’s internal algorithm.
+SmartStay is a full-stack web app that empowers users to make smarter Airbnb booking decisions. It enhances the search experience with custom filters, review-based rankings, and price insights that Airbnb itself doesn’t offer. Built with real Airbnb data from 34 major U.S. cities, SmartStay supports both casual travelers and data-savvy planners.
 
+---
 
-## Technologies Used
-Frontend: 
-- React.js
-- HTML & CSS
-- Material UI (MUI)
-- Framer Motion (for animations)
+## 🛠️ Tech Stack
 
-Backend:
-- Node.js
-- Express.js
+- **Frontend**: React.js, Material UI (MUI), Framer Motion  
+- **Backend**: Node.js, Express.js  
+- **Database**: PostgreSQL (hosted on AWS RDS, 58M+ calendar records)  
+- **Authentication**: Firebase (Google, GitHub, Email/Password)  
+- **External API**: OpenWeatherMap API (for live weather updates)
 
-Database:
-- PostgreSQL 
+---
 
-External API: 
-- OpenWeather API (for real-time weather data)
+## 🔍 Key Features
 
-Authentication: 
-- Firebase Authentication 
+1. **Flexible Filters**  
+   Filter listings by city, rating, amenities, and guest capacity. Results are interactive and linked to deeper analytics.
 
+2. **Top Rated Explorer**  
+   See the top 10 highest-rated listings per city, each with live reviews, pictures, and ratings.
 
-## Key Features
-1. Flexible Search Filters: Filter listings by city, amenities, minimum rating, and guest capacity to find the perfect stay.
+3. **Best Time to Book**  
+   Analyze monthly price trends and get the 3 cheapest booking dates per listing. Holiday week prices also included.
 
-2. Data-Driven Insights: Visual tools for comparing superhost prices, monthly price trends, and cheapest booking periods.
+4. **“Surprise Me” Tool**  
+   Discover a random high-rated listing—ideal for spontaneous planners.
 
-3. Top Rated Listings: View the top 10 listings in each city with images, reviews, and listing details.
+5. **Instant Bookable View**  
+   One-click filter for listings that support instant booking and include free parking.
 
-4. Smart Recommendation Tools: “Surprise Me” button provides a high-rated random listing; “Best Time” page helps you find optimal booking dates.
+6. **Family Travel Finder**  
+   Search listings that accommodate 4+ guests and maintain high ratings.
 
-5. Family-Friendly Search: One-click search for listings that accommodate 4+ guests with excellent reviews.
+7. **Live Weather Widget**  
+   Displays current weather in top cities using OpenWeatherMap API, updated every time the homepage loads.
 
-6. Instant Bookable Listings: Easily find listings that support instant booking and include free parking.
+8. **Secure Multi-Platform Login**  
+   Firebase Authentication supports Email/Password, Google, and GitHub login.
 
-7. Secure Authentication: Supports login via Google, GitHub, or email using Firebase.
+---
 
-8. Live Weather Display: Current weather conditions for selected cities powered by the OpenWeather API.
+## 📊 Dataset
+
+Data sourced from the [Inside Airbnb USA Kaggle Dataset](https://www.kaggle.com/datasets/konradb/inside-airbnb-usa), covering:
+
+- 34 U.S. cities  
+- Over 58 million records in `calendar.csv`  
+- ~8.7M reviews  
+- 166K listings  
+- 27K unique amenities (normalized)  
+
+We consolidated the CSVs into 6 unified nationwide datasets and stored them in PostgreSQL using 3NF schema.
+
+---
+
+## ⚙️ Performance Highlights
+
+- **Query Optimization**: Reduced /top_rated_with_review runtime from 15.2s → 3.1s with indexing, filter pushdown, and materialized views.
+- **Efficient Dropdown Search**: City dropdown auto-populated via backend `/available_cities` route and Material UI's Autocomplete with fuzzy search.
+- **Data Normalization**: 1NF and 3NF compliance; amenities and neighborhoods normalized for fast querying and join performance.
+
+---
 
 
 ## Data Source
