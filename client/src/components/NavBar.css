@@ -1,0 +1,43 @@
+/* src/components/NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7786b1;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  margin-right: 12px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.nav-right a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-right a.active {
+  border-bottom: 2px solid #f0d264;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,82 @@
+.login-page {
+  position: relative;
+  height: 100vh;
+  background: url('../images/Chicago.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.login-card {
+  z-index: 2;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 3rem 2.5rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  color: white;
+}
+
+.login-card .MuiTextField-root {
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.login-card .MuiButton-root {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+  text-transform: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.login-card .email-login {
+  background-color: #1976d2;
+  color: white;
+}
+
+.login-card .email-login:hover {
+  background-color: #1565c0;
+}
+
+.login-card .email-register {
+  background-color: #db4437;
+  color: white;
+}
+
+.login-card .email-register:hover {
+  background-color: #c1351d;
+}
+
+.login-card .google-login {
+  background-color: #f44336;
+  color: white;
+}
+
+.login-card .google-login:hover {
+  background-color: #d32f2f;
+}
+
+.login-card .github-login {
+  background-color: #333;
+  color: white;
+}
+
+.login-card .github-login:hover {
+  background-color: #24292e;
+}
