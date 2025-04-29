@@ -1,5 +1,5 @@
 # 🏡 SmartStay  
-**Your Ultimate Data-Powered Airbnb Travel Planner** https://smartstay-84693.web.app/search-listings (Only UI)
+**Your Ultimate Data-Powered Airbnb Travel Planner** https://smartstay-84693.web.app (Only UI)
 
 SmartStay is a full-stack web app that empowers users to make smarter Airbnb booking decisions. It enhances the search experience with custom filters, review-based rankings, and price insights that Airbnb itself doesn’t offer. Built with real Airbnb data from 34 major U.S. cities, SmartStay supports both casual travelers and data-savvy planners.
 
