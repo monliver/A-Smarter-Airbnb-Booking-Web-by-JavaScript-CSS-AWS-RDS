@@ -1,0 +1,31 @@
+.weather-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 500px;
+  padding: 6px 16px;
+  border-radius: 16px;
+  background: rgba(173, 216, 226, 0.4); 
+  backdrop-filter: blur(6px);           
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+  
+  .weather-scroll {
+    display: inline-block;
+    animation: scroll 50s linear infinite;
+  }
+  
+  .weather-item {
+    margin-right: 48px;
+    font-size: 1rem;           
+    font-weight: 600;           
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  

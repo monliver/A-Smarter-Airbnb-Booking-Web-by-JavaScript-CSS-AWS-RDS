@@ -1,0 +1,70 @@
+.flexible-instant-container {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.page-title {
+  font-weight: bold !important;
+  text-align: center;
+  margin-top: 10rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.page-subtitle {
+  text-align: center;
+  margin-bottom: 2rem !important;
+  color: #666;
+}
+
+.table-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.custom-table {
+  min-width: 650px;
+}
+
+/* More specific selector for table headers */
+.custom-table thead th,
+.custom-table .MuiTableCell-head {
+  font-weight: bold !important;
+  background-color: #f5f5f5 !important;
+  color: #000000 !important; /* Black color for maximum contrast */
+}
+
+.listing-row:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.rating-text {
+  margin-left: 8px;
+  color: #666;
+}
+
+/* Pagination styles */
+.MuiPagination-root {
+  margin-top: 16px;
+}
+
+.MuiPagination-ul {
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flexible-instant-container {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem !important;
+    margin-top: 16rem !important;
+  }
+  
+  .page-subtitle {
+    font-size: 0.9rem !important;
+  }
+} 
